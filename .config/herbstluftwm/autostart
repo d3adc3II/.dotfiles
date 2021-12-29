@@ -121,8 +121,10 @@ hc mousebind $Mod-Button3 resize
 
 # focus on ...
 hc keybind $Mod-BackSpace   cycle_monitor
-hc keybind $Mod-Tab         use_index +1 --skip-visible
-hc keybind $Mod-Shift-Tab   use_index -1 --skip-visible
+#hc keybind $Mod-Tab         use_index +1 --skip-visible
+hc keybind $Mod-Ctrl-Right         use_index +1 --skip-visible
+#hc keybind $Mod-Shift-Tab   use_index -1 --skip-visible
+hc keybind $Mod-Ctrl-Left   use_index -1 --skip-visible
 hc keybind Control-Mod1-Left    focus left
 hc keybind Control-Mod1-Up      focus up
 hc keybind Control-Mod1-Right   focus right
@@ -136,10 +138,10 @@ hc keybind $Mod-i jumpto urgent
 hc attr theme.reset 1
 
 # Attribute
-hc attr theme.active.color '#6790EB'
+hc attr theme.active.color '#9DF4FF'
 hc attr theme.active.inner_color '#141414'
-hc attr theme.active.outer_color '#6790EB'
-hc attr theme.background_color '#141414'
+hc attr theme.active.outer_color '#9DF4FF'
+hc attr theme.background_color '#D0D3B2'
 hc attr theme.border_width 3
 hc attr theme.floating.border_width 4
 hc attr theme.floating.outer_width 1
@@ -152,9 +154,9 @@ hc attr theme.urgent.color orange
 # Set
 hc set always_show_frame 1
 hc set focus_follows_mouse 1
-hc set frame_border_active_color '#6790EB'
-hc set frame_border_normal_color '#141414'
-hc set frame_bg_normal_color '#141414'
+hc set frame_border_active_color '#9DF4FF'
+hc set frame_border_normal_color '#657A95'
+hc set frame_bg_normal_color '#D0D3B2'
 hc set frame_bg_active_color '#000000'
 hc set frame_border_width 3
 hc set frame_bg_transparent 1
@@ -285,13 +287,13 @@ sxhkd -c ~/.config/herbstluftwm/sxhkd/sxhkdrc &
 #dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 #feh --bg-scale ~/.config/herbstluftwm/wall.png &
 #feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
-feh --bg-scale /home/d3/Pictures/Wallpapers/minimal-20.jpeg
+feh --bg-scale /home/d3/Pictures/Wallpapers/Nord/spacemars.jpg.jpeg
 
 
 #conky -c $HOME/.config/herbstluftwm/system-overview &
 #run variety &
 run nm-applet &
-pamac-tray &
+#pamac-tray &
 xfce4-power-manager &
 numlockx on &
 blueberry-tray &

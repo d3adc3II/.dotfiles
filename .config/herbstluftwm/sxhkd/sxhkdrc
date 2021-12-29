@@ -60,7 +60,7 @@ super + F12
 
 #dmenu
 super + r
-    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+    dmenu_run -i -nb '#191919' -nf '#9DF4FF' -sb '#9DF4FF' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #Atom
 #super + e

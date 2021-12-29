@@ -568,7 +568,7 @@ font-3 = "FontAwesome:size=10;0"
 
 modules-left = ewmh
 modules-center = xwindow
-modules-right = cpu2 memory2 filesystem pacman-updates arch-updates aur-updates networkspeedup networkspeeddown date
+modules-right = cpu2 memory2 filesystem arch-updates aur-updates networkspeedup networkspeeddown date
 
 tray-detached = false
 tray-offset-x = 0
@@ -1839,9 +1839,10 @@ label-urgent-padding = 2
 label-empty = %name%
 label-empty-foreground = #f3f4f5
 label-empty-background = ${colors.background}
+label-empty-underline = ${colors.background}
 label-empty-padding = 2
-format-foreground = #f3f4f5
-format-background = #f3f4f5
+;format-foreground = #f3f4f5
+;format-background = #f3f4f5
 
 
 ################################################################################
@@ -1988,7 +1989,7 @@ label = %percentage_used%%
 
 format = Mem <label>
 format-prefix = "  "
-format-underline = #3384d0
+;format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix-foreground = ${colors.underline}
